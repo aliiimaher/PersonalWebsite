@@ -14,16 +14,30 @@
         of Lorem Ipsum.
       </p>
     </div>
-    <div>
+    <div class="right-container">
       <img src="../pictures/AliMaher.jpg" alt="Avatar" class="photo" />
       <div class="logos-container">
-        
+        <a href="mailto:alimohammadmaher@gmail.com">
+          <img src="../pictures/mdi_email.svg" alt="email" class="email-logo" />
+        </a>
+        <a href="https://github.com/aliiimaher/">
+          <img
+            src="../pictures/bxl_github.svg"
+            alt="github"
+            class="github-logo"
+          />
+        </a>
+        <!--  -->
+        <a href="https://www.linkedin.com/in/aliiii-maher/">
+          <img
+            src="../pictures/jam_linkedin-circle.svg"
+            alt="linkedin"
+            class="linkedin-logo"
+          />
+        </a>
       </div>
     </div>
   </div>
-  <!-- <div class="home">
-    <img alt="aliMaher" src="../pictures/AliMaher.jpg" class="img" />
-  </div> -->
 </template>
 
 <script>
@@ -35,7 +49,6 @@ export default {
 <style scoped>
 .main-container {
   max-width: 1600px;
-  /* height: auto; */
   background-color: #f1f1f1;
   padding: 20px;
   display: flex;
@@ -63,15 +76,21 @@ export default {
   font-family: "Times New Roman", Times, serif;
 }
 
+.right-container {
+  justify-content: center;
+  margin-left: 400px;
+}
+
 .photo {
   border-radius: 100%;
   width: 320px;
   background-color: #f1f1f1;
   padding: 20px;
-  margin-left: 400px;
 }
 
 .logos-container {
-
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-around;
 }
 </style>
