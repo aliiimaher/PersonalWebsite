@@ -51,14 +51,14 @@ export default {
   max-width: 1600px;
   background-color: #f1f1f1;
   padding: 20px;
-  display: flex;
+  /* display: flex;
   margin: auto;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
 .container {
-  width: 600px;
+  max-width: 600px;
   /* height: 100%; */
   background-color: #f1f1f1;
   padding: 20px;
@@ -78,19 +78,33 @@ export default {
 
 .right-container {
   justify-content: center;
-  margin-left: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo {
   border-radius: 100%;
   width: 320px;
   background-color: #f1f1f1;
-  padding: 20px;
+  padding: 16px;
+  margin: auto;
 }
 
 .logos-container {
   display: flex;
   /* justify-content: center; */
   justify-content: space-around;
+}
+
+@media screen and (min-width: 800px) {
+  .main-container {
+    display: flex;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* gap: 400px; */
+    justify-content: space-between;
+  }
 }
 </style>
